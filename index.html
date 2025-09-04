@@ -5,59 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Negocio Local</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- 🔹 Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Bienvenidos a <span>Mi Negocio</span></h1>
-      <p>Calidad, confianza y atención personalizada.</p>
-      <a href="#contacto" class="btn">Contáctanos</a>
-    </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Bienvenidos a Mi Negocio</h1>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <!-- 🔹 Servicios -->
-  <section id="servicios" class="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?coffee" alt="Servicio 1">
-        <h3>Cafetería</h3>
-        <p>El mejor café artesanal de la ciudad.</p>
+  <!-- Productos -->
+  <main>
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="products-container">
+        <div class="product">
+          <h3>Producto 1</h3>
+          <p class="description">Este es un producto de ejemplo que puedes rellenar con más detalles sobre lo que ofrece tu negocio.</p>
+          <button class="toggle-btn">Ver más</button>
+        </div>
+        <div class="product">
+          <h3>Producto 2</h3>
+          <p class="description">Otro producto de ejemplo. Aquí puedes poner características, beneficios o cualquier información relevante.</p>
+          <button class="toggle-btn">Ver más</button>
+        </div>
+        <div class="product">
+          <h3>Producto 3</h3>
+          <p class="description">Más información sobre este producto de prueba. Cambia el contenido según tu negocio real.</p>
+          <button class="toggle-btn">Ver más</button>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?barber" alt="Servicio 2">
-        <h3>Barbería</h3>
-        <p>Estilo y confianza en cada corte.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?restaurant" alt="Servicio 3">
-        <h3>Restaurante</h3>
-        <p>Sabores únicos en un ambiente acogedor.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 🔹 Contacto -->
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <p>¿Quieres más información? Escríbenos directamente a WhatsApp.</p>
-    <form action="https://wa.me/521234567890" method="get" target="_blank">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar Mensaje</button>
-    </form>
-  </section>
+    <!-- Ubicación -->
+    <section id="ubicacion">
+      <h2>Ubicación</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.123456789!2d-102.123456!3d21.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a1234567890ab%3A0xabcdef1234567890!2sMi+Negocio+Local!5e0!3m2!1ses!2smx!4v1690000000000!5m2!1ses!2smx" 
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="map-info">
+          <p><strong>Mi Negocio Local</strong></p>
+          <p>⭐ 4.8 (120 reseñas)</p>
+          <p>Calle Ejemplo 123, Ciudad, País</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- 🔹 Footer -->
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://wa.me/521234567890" method="get" target="_blank">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="text" name="mensaje" placeholder="Tu mensaje" required>
+        <button type="submit">Enviar a WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Mi Negocio Local. Todos los derechos reservados.</p>
+    <p>© 2025 Mi Negocio Local</p>
   </footer>
 
-  <!-- 🔹 Botón flotante WhatsApp -->
-  <a href="https://wa.me/521234567890" target="_blank" class="whatsapp-float">
-    💬
-  </a>
+  <script src="script.js"></script>
 </body>
 </html>
