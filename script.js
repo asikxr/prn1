@@ -7,4 +7,4 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
   });
 });
 
-console.log("Página lista para negocios locales con productos y Google Maps");
+console.log("Página lista para negocios locales con diseño premium, productos y Google Maps");
